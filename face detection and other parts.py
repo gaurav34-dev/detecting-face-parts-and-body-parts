@@ -63,9 +63,8 @@ while True:
          
         cv2.imshow("My window", frame)
 
-    key = cv2.waitKey(30)
 
-    if key == ord("q"):
+    if (key := cv2.waitKey(30)) == ord("q"):
         break
 
 cap.release()
